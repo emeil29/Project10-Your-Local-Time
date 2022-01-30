@@ -1,0 +1,49 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300;400&family=Quintessential&family=Roboto:ital,wght@1,300&display=swap');
+
+body{
+    background-image: url(./image1.jpeg);
+    background-position-x: 340px;
+    background-position-y: 100px;
+    background-repeat: no-repeat;
+     background-size: 800px;  
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15vh;   
+}
+.writing{
+    font-family: "Barlow";
+    margin-bottom: 0;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    height: 17vh;
+    color: rgb(50, 73, 2);
+    font-size: 30px;  
+}
+.time{
+    font-family: "Barlow";
+    font-weight: bold;
+    background-color: rgb(170, 147, 147);
+    color: white;
+    font-size: 28px;
+    height: 10vh;
+    width: 18vw;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    animation:  move 3s linear;  
+}
+@keyframes move {
+    0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; right:200px; top:200px;}
+  50%  {background-color:blue; right:200px; top:200px;}
+   75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:red; left:0px; top:0px;} 
+}
